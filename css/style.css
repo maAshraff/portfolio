@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+pre,
+div {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body {
+  overflow: hidden;
+}
+img {
+  object-fit: cover;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .header {
+    height: 10vh;    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .links {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+.logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sidebar {
+  z-index: 9;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+}
+.sidebar-active{
+  right: 0%;
+}
+
+
+.sidebar-header {
+  padding: 10px;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu ul li,.sidebar-menu i {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+.hamburger-btn{cursor: pointer;color: #fff;}
+.info{
+  height: 100vh;
+}
+.info-1{background-color: #7c5252;}
+.info-2{background-color: #6d7c52;}
+.info-3{background-color: #527c6f;}
+.info-4{background-color: #77527c;}
+.info-5{background-color: #7c5252;}
+.nav-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #fff;
+  font-size: 1rem;
+  
+}
+.nav-dots span {
+  cursor: pointer;
+
+}
+.nav-dots span.active {
+  font-size: 1.1rem !important;
+  transform: scale(1);
+  border-bottom: 1px solid #fff;
+}
